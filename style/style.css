@@ -46,15 +46,6 @@ body {
     gap: 82px;
 }
 
-.apresentacao__depoimentos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50vh;
-    justify-content: space-between;
-    padding: 5%;
-    gap: 82px;
-
-}
 
 .apresentacao__conteudo {
     width: 50%;
@@ -62,6 +53,7 @@ body {
     flex-direction: column;
     gap: 40px;
 }
+
 
 .apresentacao__conteudo__titulo{
     font-size: 2.25rem;
@@ -117,6 +109,11 @@ body {
     width: 50%;
 }
 
+.apresentacao__imagem__dep {
+  width: 30%;
+}
+
+
 .rodape {
     padding: 24px;
     color: var(--cor-primaria);
@@ -130,11 +127,11 @@ body {
 
 @media (max-width: 1200px) {
     .cabecalho {
-        padding: 10%;  
+        padding: auto;  
     }
    
     .cabecalho__menu{
-        justify-content: center;
+        justify-content: auto;
     }
 
     .apresentacao {
@@ -146,4 +143,8 @@ body {
         width: auto;
     }
 
+    .apresentacao__imagem__dep {
+        padding: auto;
+        justify-content: auto;
+    }
 }
